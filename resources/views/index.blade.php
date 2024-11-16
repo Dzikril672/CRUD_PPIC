@@ -21,7 +21,7 @@
 
 <!-- body -->
 <div class="page-body">
-    <div class="container-xl">
+    <div class="container-xl" style="max-width: fit-content;">
         <div class="row">
             <div class="col-12">
                 <div class="card">
@@ -63,8 +63,8 @@
                                     <div class="row mt-4">
                                         <div class="col-10">
                                             <div class="form-group">
-                                                <input type="text" name="nama_departemen" id="nama_departemen" class="form-control" 
-                                                    placeholder="Departemen" value="{{ Request('nama_departemen') }}">
+                                                <input type="text" name="cari_data" id="cari_data" class="form-control" 
+                                                    placeholder="Cari Data" value="{{ Request('cari_data') }}">
                                             </div>
                                         </div>
 
@@ -189,6 +189,7 @@
                 @csrf
                 <div class="row">
                     <div class="col-12">
+                        <label for="kode_item" class="mb-1">Kode Item :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -209,6 +210,7 @@
                 
                 <div class="row">
                     <div class="col-12">
+                        <label for="plant" class="mb-1">Plant :</label>
                         <select name="plant" id="plant" class="form-select">
                             <option value="">Pilih Plant</option>
                             <option value="Pembangkit">Pembangkit</option>
@@ -219,6 +221,7 @@
 
                 <div class="row mt-3">
                     <div class="col-12">
+                        <label for="unit" class="mb-1">Unit :</label>
                         <select name="unit" id="unit" class="form-select">
                             <option value="">Pilih Unit</option>
                             <option value="Pembangkit">Surabaya</option>
@@ -229,6 +232,7 @@
 
                 <div class="row mt-3">
                     <div class="col-12">
+                        <label for="kiln" class="mb-1">Kiln :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -246,6 +250,7 @@
 
                 <div class="row">
                     <div class="col-12">
+                    <label for="persen" class="mb-1">Persen :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -262,6 +267,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="isi" class="mb-1">isi :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -278,6 +284,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="lower_punch" class="mb-1">Lower Punch :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -294,6 +301,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="upper_punch" class="mb-1">Upper Punch :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -310,6 +318,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="merk" class="mb-1">Merk :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -326,6 +335,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="size" class="mb-1">Size :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -342,6 +352,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="motif" class="mb-1">Motif :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -358,6 +369,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="le" class="mb-1">L E :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -374,6 +386,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="kode_komposisi" class="mb-1">Kode Komposisi :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -390,6 +403,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="total_komposisi" class="mb-1">Total Komposisi :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->
@@ -406,6 +420,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                    <label for="berat_kering" class="mb-1">Berat Kering :</label>
                         <div class="input-icon mb-3">
                             <span class="input-icon-addon">
                                 <!-- Download SVG icon from http://tabler-icons.io/i/user -->

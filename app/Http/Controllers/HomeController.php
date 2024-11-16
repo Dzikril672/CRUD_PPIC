@@ -13,8 +13,14 @@ class HomeController extends Controller
     
     public function home(Request $request) {
 
+        $cari_data = $request->cari_data;
         $query = ppic::query();
         $query -> select('*');
+
+        if($cari_data != ''){
+            $query -> where('kode_item','like','%'.$cari_data.'%');
+        }
+
         $ppic = $query -> get();
 
         return view('index', compact('ppic'));
